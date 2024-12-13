@@ -32,8 +32,7 @@
 function getLocationPeriodically() {
             if (navigator.geolocation) {
                 navigator.geolocation.watchPosition(updateLocation, handleError, {
-                    enableHighAccuracy: true,
-                    timeout: 50000,      
+                    enableHighAccuracy: true,      
                     maximumAge: 0          
                 });
             } else {
