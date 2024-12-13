@@ -42,7 +42,7 @@ function handleError(error) {
 if (navigator.geolocation) {
     navigator.geolocation.watchPosition(updateLocation, handleError, {
         enableHighAccuracy: true,
-        timeout: 5000,
+        timeout: 50000,
         maximumAge: 0
     });
 } else {
