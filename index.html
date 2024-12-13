@@ -13,7 +13,6 @@
     </div>
 
     <script>
-        let timeoutErrorShown = false;  
 
         function updateLocation(position) {
             const latitude = position.coords.latitude;
@@ -37,10 +36,7 @@
             } else if (error.code === error.POSITION_UNAVAILABLE) {
                 alert("Location information is unavailable. Try again later.");
             } else if (error.code === error.TIMEOUT) {
-                if (!timeoutErrorShown) {
-                    alert("The request to get your location timed out. Please try again.");
-                    timeoutErrorShown = true; 
-                }
+                    console.log("--");
             }
         }
 
